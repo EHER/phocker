@@ -1,0 +1,255 @@
+html,
+body {
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    background-color: #FCFCFC;
+    color: #555555;
+    min-width: 320px;
+}
+
+p {
+    margin: 1em 0em;
+}
+
+p:first-child {
+    margin-top: 0em;
+}
+
+p:last-child {
+    margin-bottom: 0em;
+}
+
+a {
+    color: #009FDA;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00BAFF;
+}
+
+header {
+    margin: 0px 0px 3em;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #136B79 url(../images/header.jpg) center no-repeat;
+    border-bottom: 4px solid #36677A;
+}
+
+header img.logo {
+    color: #FFF;
+    font-size: 60px;
+    margin: 20px 0px 0px 0px;
+}
+
+.nodisplay {
+    display: none;
+}
+
+#forkme {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+header p {
+    color: #FFF;
+}
+
+#phansible .main.menu {
+    min-width: 320px;
+    z-index: 900;
+}
+
+.ui.transparent.menu {
+    opacity: 0.90;
+}
+
+#phansible .container {
+    /*width: 1050px;*/
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+#phansible .main.container {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+#phansible .main.container > h2 {
+    -webkit-transition: 0.5s color ease;
+    -moz-transition: 0.5s color ease;
+    -o-transition: 0.5s color ease;
+    -ms-transition: 0.5s color ease;
+    transition: 0.5s color ease;
+}
+
+#phansible .phansible > p,
+#phansible section > p {
+    color: #888888;
+}
+
+#phansible .main h2.group {
+    color: #A24096;
+}
+
+#phansible .contributor-avatar {
+    min-width: 75px;
+}
+
+#phansible section:first-child
+#phansible .phansible:first-child,
+#phansible h2 + .phansible,
+#phansible h3 + .phansible,
+#phansible h4 + .phansible,
+#phansible h2 + section,
+#phansible h3 + section,
+#phansible h4 + section {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-top: none;
+}
+
+#phansible section,
+#phansible .phansible {
+    margin: 1em 0em;
+    padding: 1em 0em;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.ui.selection.dropdown {
+    padding: 0.65em 1em;
+}
+
+.ui.secondary.vertical.pointing.menu.stuck {
+    position: fixed;
+    top: 50px;
+}
+
+@media only screen and (max-width: 1725px) {
+    header {
+        margin: 0px 0px 3em;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #phansible .fixed .container {
+        width: auto;
+        /*max-width: 700px;*/
+    }
+
+    #phansible .container {
+        width: auto;
+        /*max-width: 700px;*/
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #phansible .fixed .container {
+        width: auto;
+        max-width: 800px;
+        margin: 0px auto;
+    }
+
+    #phansible .container {
+        width: auto;
+        max-width: 800px;
+        margin: 0% 30px 0px;
+    }
+}
+
+
+@media only screen and (max-width: 1160px) {
+    #main_menu {
+        display: none;
+    }
+    #phansible .fixed .container {
+        width: auto;
+        /*max-width: 800px;*/
+        margin: 0px auto;
+    }
+
+    #phansible .container {
+        width: auto;
+        /*max-width: 800px;*/
+        margin: 0% 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #phansible .main.menu .icon.item {
+        display: none;
+    }
+
+    #phansible .main.menu .github.item {
+        display: block;
+    }
+
+    #phansible .main.menu .github.item:before {
+        display: none;
+    }
+
+    header {
+        margin: 0px 0px 3em;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .ui.form .two.fields > .field,
+    .ui.form .three.fields > .field {
+        padding: 0px;
+        width: 100%;
+    }
+}
+
+pre code {
+    background-color: #333;
+    display: block;
+    color: #c5c5c5;
+    padding: 15px 10px;
+}
+
+div.mainFooter {
+    padding: 30px 0;
+    background-color: #444444;
+    color: #c5c5c5;
+}
+
+div.mainFooter a {
+    color: #c5c5c5;
+}
+
+div.mainFooter a:hover {
+    color: #ffffff;
+}
+
+div.mainFooter p {
+    line-height: 1.7em;
+}
+
+div.footerNotice {
+    background-color: #cccccc;
+    padding: 20px 0;
+    color: #666666;
+}
+
+form input[name="vagrantfile-local[vm][name]"],
+form input[name="apache[docroot]"],
+form input[name="apache[servername]"],
+form input[name="nginx[docroot]"],
+form input[name="nginx[servername]"] {
+    text-transform: lowercase;
+}
