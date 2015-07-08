@@ -1,0 +1,23 @@
+{% if nginx.install %}
+php:
+    build: docker/php
+    links:
+    {% if mysql.install %}
+        - database
+    {% endif %}
+{% endif %}
+
+web:
+    build: docker/web
+
+{% if mysql.install %}
+database:
+    {% if mysql.install %}
+    image: mysql
+    environments:
+        - MYSQL_ROOT_PASSWORD={{ mysql.root_password }}
+        - MYSQL_DATABASE={{ mysql.database }}
+        - MYSQL_USER={{ mysql.user }}
+        - MYSQL_PASSWORD={{ mysql.password }}
+    {% endif %}
+{% endif %}

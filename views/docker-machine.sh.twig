@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker-machine create \
+    --driver virtualbox \
+    --virtualbox-memory {{ vm.memory|default(1024) }} \
+    phocker
